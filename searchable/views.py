@@ -52,7 +52,7 @@ def convert_pdf(request):
             request.session['output_pdf_path'] = output_path
             request.session['output_filename'] = f"{base_name}_searchable.pdf"
             
-            return render(request, 'searchable/success.html', {
+            return render(request, 'success.html', {
                 'original_filename': original_filename,
                 'searchable_filename': f"{base_name}_searchable.pdf"
             })
